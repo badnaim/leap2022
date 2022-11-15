@@ -1,0 +1,31 @@
+button {
+    width: 300px;
+    height: 100px;
+    background-color: aqua;
+    color: brown;
+    font-size: 30px;
+    border-radius: 10px;
+    border-color: blue;
+    border: none;
+    transition: width 2s height 2s;
+}
+
+button:hover {
+    background-color: black;
+    color: aliceblue;
+    cursor: pointer;
+    border-color: rgb(37, 37, 60);
+    /* height: 60px; */
+    width: 400px;
+    transition: background-color 1s, width 2s;
+}
+
+
+
+button:active {
+    /* width: 400px; */
+    transition: background-color 2s;
+    color: aliceblue;
+}
+
+/* transition: [transition-property] [transition-duration] [transition-timing-function] [transition-property]; */

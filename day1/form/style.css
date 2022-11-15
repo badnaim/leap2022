@@ -1,0 +1,26 @@
+#neg {
+    display: flex;
+    flex-direction: column;
+}
+
+form button {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+.hoyr {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.hair {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    display: block;
+}
