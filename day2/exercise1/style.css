@@ -67,6 +67,12 @@ h3 {
     justify-content: space-between;
 }
 
+.box img:hover {
+    cursor: pointer;
+    background: rgb(24, 24, 24) url(./ian-talmacs-fFj2PLjPbUQ-unsplash.jpg);
+    background-blend-mode: multiply;            /* <----------------------------------- asuudal */
+}
+
 /* ----------------------------- */
 
 /* 3 column haragdana */
