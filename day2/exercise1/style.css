@@ -1,34 +1,103 @@
 body {
-    
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
+/* ----------------------------- */
+
 .mainPhoto {
-    width: 100%;
-    height: 500px;
-    background-color: aqua;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./v2osk-1Z2niiBPg5A-unsplash.jpg);
+    background-position: middle;
+    background-size: cover;
+    display: flex;
+    align-items: center;
 }
+
+.spacing {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.inWords {
+    color: white;
+}
+
+.inWords h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-size: 35px;
+
+}
+
+.inWords p {
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+/* ----------------------------- */
+
+h3 {
+    font-family: lobster;
+    font-size: 30px;
+    margin-left: 40px;
+    margin-top: 90px;
+}
+
+/* ----------------------------- */
 
 .gallery {
     display: flex;
     justify-content: center;
 }
 
-.galleryPhotos {
-    width: 2100px;
-    height: 1000px;
+.photos {
+    width: 95%;
+    height: 720px;
     background-color: aqua;
     display: flex;
     flex-direction: row;
-    justify-content:space-arou;
-
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.photo img {
-    width: 100%;
+/* ----------------------------- */
+
+/* 3 column haragdana */
+@media screen and (max-width: 1200px) {
+    .inWords h1 {
+        font-size: 32px;
+    }
+    .inWords p {
+        font-size: 17px;
+    }
+    /* .photo4 {
+        display: inline-block;
+    } */
+
+}
+/* 2 column haragdana */
+@media screen and (max-width: 992px) {
+    .inWords h1 {
+        font-size: 29px;
+    }
+    .inWords p {
+        font-size: 14px;
+    }
 }
 
-.photo {
-    /* flex-wrap: wrap; */
-    background-color: black;
-
+/* 1 column haragdana */
+@media screen and (max-width: 768px) {
+        .inWords h1 {
+            font-size: 25px;
+        }
+        .inWords p {
+            font-size: 10px;
+        }
 }
