@@ -1,0 +1,44 @@
+body {
+    background-color: aqua;
+    padding: 30px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 30px;
+}
+
+li:hover {
+    cursor: pointer;
+    color: blueviolet;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        display: block;
+    }
+    body {
+        background-color: aquamarine;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    ul {
+        display: block;
+    }
+}
+@media screen and (max-width: 600px) {
+    h1 {
+        color:brown;
+    }
+}
