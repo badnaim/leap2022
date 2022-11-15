@@ -1,0 +1,34 @@
+body {
+    
+}
+
+.mainPhoto {
+    width: 100%;
+    height: 500px;
+    background-color: aqua;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+}
+
+.galleryPhotos {
+    width: 2100px;
+    height: 1000px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-arou;
+
+}
+
+.photo img {
+    width: 100%;
+}
+
+.photo {
+    /* flex-wrap: wrap; */
+    background-color: black;
+
+}
