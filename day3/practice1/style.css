@@ -1,0 +1,46 @@
+header {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+}
+
+header .logo {
+    background-color: aqua;
+    width: 15%;
+}
+
+
+
+header .button {
+    background-color: red;
+    width: 15%;
+}
+
+header .menu-desktop {
+    background-color: blue;
+    width: 15%;
+}
+
+header .menu-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    header .menu-desktop {
+        display: none;
+    }
+    header .menu-mobile {
+        display: block;
+        background-color: bisque;
+        width: 100%;
+    }
+    header .logo {
+        width: 50%;
+    }
+    header .button {
+        width: 50%;
+    }
+    header {
+        flex-wrap: wrap;
+    }
+}
