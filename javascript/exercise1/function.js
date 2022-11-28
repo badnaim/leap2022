@@ -17,27 +17,36 @@ console.log(myNumber1 % myNumber2);
 
 //1 comments can make code readable
 
-//2 javascript lesson beign
-
-/*3 comments 
+/*2 comments 
 can 
 make 
 code 
 readable*/
 
-//4 null
-let myVar = null;
-
-alert(myVar);
-
-// undefined
-var myVar1;
-
-alert(myVar);
-
-// utga onoogoogui huwisagch zarlah
+// 6. utga onoogoogui huwisagch zarlah
 let hello;
 
-// utga onooson huwisagch zarlah
+// 7. utga onooson huwisagch zarlah
 
 let world = "mindless";
+
+// 8. Олон мөрөнд First name, last name, marital status, country, age гэсэн нэртэй хувьсагч зарлах
+
+let firstName = "Batnyam";
+let lastName = "Tumurbat";
+let martialStatus = "Single";
+let country = "Mongolia";
+let age = 20;
+
+// 9. Нэг мөрөнд First name, last name, marital status, country, age гэсэн нэртэй хувьсагч зарлах
+
+let firstName1 = "Batnyam",
+  lastName2 = "Tumurbat",
+  martialStatus3 = "Single",
+  country4 = "Mongolia",
+  age5 = 20;
+
+//   10. MyAge, yourAge нэртэй хувьсагч зарлан эхний утгыг оноох
+
+let MyAge = 20;
+let yourAge = 19;
