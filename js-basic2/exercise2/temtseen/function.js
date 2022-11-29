@@ -15,7 +15,7 @@ averageBteam = (teamB1 + teamB2 + teamB3) / 3;
 console.log("A bagiin dundaj onoo bol " + averageAteam);
 console.log("B bagiin dundaj onoo bol " + averageBteam);
 
-// 2. Багийн дундаж нөгөө багийхаас их бол тэр баг түрүүлсэн гэж хэвлэнэ үү. Багуудын оноо тэнцсэн тохиолдолд багууд тэнцсэн гэж хэвлэнэ үү. ------- leaf year lagorithm --------
+// 2. Багийн дундаж нөгөө багийхаас их бол тэр баг түрүүлсэн гэж хэвлэнэ үү. Багуудын оноо тэнцсэн тохиолдолд багууд тэнцсэн гэж хэвлэнэ үү. 
 
 if (averageAteam > averageBteam) {
   console.log("A team-iin onoo " + averageAteam + " ih uchraas turuulsen.");
