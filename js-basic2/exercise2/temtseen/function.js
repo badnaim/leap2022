@@ -17,14 +17,24 @@ console.log("B bagiin dundaj onoo bol " + averageBteam);
 
 // 2. Багийн дундаж нөгөө багийхаас их бол тэр баг түрүүлсэн гэж хэвлэнэ үү. Багуудын оноо тэнцсэн тохиолдолд багууд тэнцсэн гэж хэвлэнэ үү. ------- leaf year lagorithm --------
 
+if (averageAteam > averageBteam) {
+  console.log("A team-iin onoo " + averageAteam + " ih uchraas turuulsen.");
+} else if (averageAteam < averageBteam) {
+  console.log("B team-iin onoo " + averageBteam + " ih uchraas turuulsen.");
+} else if ((averageAteam = averageBteam)) {
+  console.log("A team B team-iin dundaj onoonuud tentsuu baina.");
+} 
+
 // Энэ дүрэм нь зөвхөн багийн дундаж 100 аас багагүй тохиолдолд энэхүү дүрэм хэрэгжэхийг анхаарна уу. Хэрвээ 2 баг 2 уулаа 100 аас бага тохиолдолд ялагч байхгүй. Тус бүрийн нөхцөлийг оноог өөрчилж туршиж үзээрэй.
 
-if (averageAteam > averageBteam) {
-  console.log("A team-iin onoo " + averageAteam + " ih");
-} else if (averageAteam < averageBteam) {
-  console.log("B team-iin onoo " + averageBteam + " ih");
-} else if ((averageAteam = averageBteam)) {
-  console.log("A team B team-iin dundaj onoo tentsuu");
+if (averageAteam >= 100 && averageBteam >= 100) {
+  if (averageAteam > averageBteam) {
+    console.log("A team-iin onoo " + averageAteam + " ih uchraas turuulsen.");
+  } else if (averageAteam < averageBteam) {
+    console.log("B team-iin onoo " + averageBteam + " ih uchraas turuulsen.");
+  } else if ((averageAteam = averageBteam)) {
+    console.log("A team B team-iin dundaj onoonuud tentsuu baina.");
+  } 
 } else {
-  console.log();
+  console.log("yalagch baihgui hha");
 }
