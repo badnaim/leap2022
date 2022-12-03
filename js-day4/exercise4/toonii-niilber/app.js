@@ -1,12 +1,10 @@
-let total = 0;
-let input = 10;
+// let s = prompt("Too oruulah");
 
-for (i = 1; (i) => input; i += 1) {
-  total = total + i;
-  console.log(total);
-}
+let a = 0;
+let input = 12;
 
-// for (var i = 0; i < 10; i +=1) {
-//   console.log(i);
-// }
-// console.log("done!");
+
+for (i = 1; i <= input; i += 1) {
+  a = a + i;
+}console.log(a);
+
