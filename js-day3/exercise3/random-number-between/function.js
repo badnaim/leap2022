@@ -4,37 +4,31 @@
 
 // let number1 = window.prompt(),
 //     number2 = window.prompt();
-// alert(Math.random(min <= x <= max));
-// let a = 3, b = 9;
-
-console.log("--------------------------------------");
 
 // let number1 = 1,
-//     number2 = 6,
-//     max,
-//     min,
-//     x;
+//     number2 = 5,
+//     x = Math.random();
+
+let number1 = 1,
+    number2 = 10,
+    random = Math.floor(Math.random() * 10) + 1,
+    random1 = Math.floor(Math.random() * 10);
+
+console.log(random1);
 
 // if (number1 > number2) {
-//   number1 = max;
-//   number2 = min;
-//   console.log(Math.random(min <= x <= max));
+//   max = number1;
+//   min = number2;
+//   console.log(random);
 // } else {
-//   number2 = max;
-//   number1 = min;
-//   console.log(Math.random(min <= x <= max));
+//   min = number1;
+//   max = number2;
+//   console.log(random);
 // }
 
-console.log("--------------------------------------");
 
-// // input from the user
-// const min = parseInt(prompt());
-// const max = parseInt(prompt());
 
-// // generating a random number
-// const a = Math.floor(Math.random() * (max - min + 1)) + min;
 
-// // display a random number
-// console.log(`Random value between ${min} and ${max} is ${a}`);
+
 
 
