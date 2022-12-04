@@ -2,33 +2,16 @@
 // 2. prompt - оор өгсөн 2 тооны хооронд дурын тоо generate хийж гаргана уу.
 
 
-// let number1 = window.prompt(),
-//     number2 = window.prompt();
+// const min = parseInt(prompt("Enter a min value: "));
+// const max = parseInt(prompt("Enter a max value: "));
+const min = 1;
+const max = 20;
+const a = Math.floor(Math.random() * (max - min + 1)) + min;
+console.log(`Random value between ${min} and ${max} is ${a}`);
 
-// let number1 = 1,
-//     number2 = 5,
-//     x = Math.random();
+// console.log("---------------------------")
 
-let number1 = 1,
-    number2 = 10,
-    random = Math.floor(Math.random() * 10) + 1,
-    random1 = Math.floor(Math.random() * 10);
-
-console.log(random1);
-
-// if (number1 > number2) {
-//   max = number1;
-//   min = number2;
-//   console.log(random);
-// } else {
-//   min = number1;
-//   max = number2;
-//   console.log(random);
-// }
-
-
-
-
-
-
-
+// console.log(Math.random());
+// console.log(Math.floor(Math.random()));
+// console.log(max - min + 1);
+// console.log(Math.floor(Math.random() * (max - min + 1)));
