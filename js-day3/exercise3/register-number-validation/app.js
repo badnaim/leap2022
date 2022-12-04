@@ -3,7 +3,7 @@
 
 // Input: СЦ90091817
 
-const rNumber = СЦ90091817;
+const input = СЦ90091817;
 let twoNumber = input.substr(0, 2);
 let eigthNumber = input.substr(2, 10);
 
