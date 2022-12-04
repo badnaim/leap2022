@@ -32,7 +32,7 @@
 // console.log(space);
 
 // console.log("--------------hollow stars---------------");
-// // process.stdout.write("\n"); console.log ghde shine mornoos eheldeggui bleh
+
 
 // let n1 = 4,
 //   space1 = "";
