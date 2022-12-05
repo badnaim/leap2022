@@ -8,17 +8,14 @@
 
 // console.log(number.length);
 
-
 // -----------------------------------
 
-
 // let a = prompt("Ta hussen neg toogoo oruulna uu");
-let a = 898989;
-let count = 0;
+let a = 8989;
+let count = 2;
 
-
-while(a !== 0){
-    count  = count + 1;
-    a = Math.floor(a / 10);
+while (a !== 0) {
+  count = count + 1;
+  a = Math.floor(a / 10);
 }
 console.log(count);
