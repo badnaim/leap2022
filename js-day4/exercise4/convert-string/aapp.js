@@ -25,3 +25,20 @@ let two = l1.toUpperCase(),
   five = l2.toLowerCase();
 
 console.log(one + two + three + four + five);
+
+// ----------------------------------
+
+str = "Hello, I am GonchigSumlai.";
+res = "";
+
+for (var i = 0; i < str.length; ++i) {
+  c = str[i];
+  if (c == c.toUpperCase()) {
+    res += c.toLowerCase();
+  } else if (c == c.toLowerCase()) {
+    res += c.toUpperCase();
+  }else {
+    res += c;
+  }
+}
+console.log(res);

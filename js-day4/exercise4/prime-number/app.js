@@ -5,11 +5,11 @@
 
 // let n = window.prompt("Та 0-99 хүртэлх дурын тоог оруулна уу: ");
 let n = 5;
-let i = 1, prime = true;
+let prime = true;
 
 if (n === 1) {
   console.log("false");
-}else if (100 > n > 1) {
+}else if (100 > n && n > 1) {
   for (i = 2; i < n; i++) {
     if (n % i == 0) {
       prime = false;
