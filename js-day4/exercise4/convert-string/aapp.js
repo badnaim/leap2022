@@ -20,8 +20,8 @@ let one = input1[0].toLowerCase();
 let three = input1[5].toLowerCase();
 let four = input1[6].toUpperCase();
 let l1 = input1.substr(1, 4),
-    l2 = input1.substr(7, 13);
-let two = l1.toUpperCase(), 
-    five = l2.toLowerCase();
+  l2 = input1.substr(7, 13);
+let two = l1.toUpperCase(),
+  five = l2.toLowerCase();
 
 console.log(one + two + three + four + five);
