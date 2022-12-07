@@ -1,17 +1,20 @@
 // 1. 10 хүртэлх натурал тоог хэвлэх программ бич
-let i = 0, n = "";
+let i = 0,
+  n = "";
 
 while (i < 10) {
   i += 1;
   n += i + " ";
-}console.log(n);
+}
+console.log(n);
 
 console.log("-------------------");
 // 2. 10 хүртэлх натурал тооны сондгой тоонуудыг хэвлэх программ бич
-let i1 = 0, n1 = "";
+let i1 = 0,
+  n1 = "";
 
 for (let i1 = 0; i1 <= 10; i1++) {
-  if (i1 % 2 !== 0) {   
+  if (i1 % 2 !== 0) {
     n1 = i1 + " ";
     console.log(n1);
   }
@@ -19,7 +22,8 @@ for (let i1 = 0; i1 <= 10; i1++) {
 
 console.log("-------------------");
 // 3. 10 хүртэлх натурал тооны тэгш тоонуудыг хэвлэх программ бич
-let i2 = 0, n2 = "";
+let i2 = 0,
+  n2 = "";
 
 for (let i = 0; i <= 10; i++) {
   if (i % 2 == 0) {
@@ -39,16 +43,20 @@ console.log(sum);
 
 console.log("-------------------");
 // 5. N хүртэлх натурал тооны хэвлэх болон тэдгээр тооны нийлбэрийг олох программ бич
-let N = 7, x = 0, sum1 = 0;
+let N = 7,
+  x = 0,
+  sum1 = 0;
 
 while (x < N) {
   x++;
   sum1 += x;
-}console.log(sum1);
+}
+console.log(sum1);
 
 console.log("-------------------");
 // 6. Өгөгдсөн тоог анхны мөн эсэхийг олох программ бич
-let randomNumber = 3, prime = true;
+let randomNumber = 3,
+  prime = true;
 
 // if (randomNumber === 1 ) {
 //   console.log("false");
@@ -68,8 +76,26 @@ let randomNumber = 3, prime = true;
 //   console.log("false");
 // }
 
-
 // 7. Өгөгдсөн интервал дахь анхны тоог хэвлэх программ бич
+
+// if (randomNumber === 1 ) {
+//   console.log("false");
+// }else if (100 > n && n > 1) {
+//   for (i = 0; i < randomNumber; i++) {
+//     if (randomNumber % i == 0) {
+//       prime = false;
+//       break;
+//     }
+//   }
+//   if (prime) {
+//     console.log("true");
+//   }else {
+//     console.log("false");
+//   }
+// }else {
+//   console.log("false");
+// }
+
 // 8. N тооны факториал олох программ бич
 // 9. Өгөгдсөн тооны цифрүүдийн нийлбэрийг олох программ бич
 
