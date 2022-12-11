@@ -18,13 +18,13 @@ let athletics = [
     record: [100, 20, 30, 200],
   },
   {
-    name: "bat",
+    name: "Bat",
     age: 20,
     country: "USA",
     record: [100, 20],
   },
   {
-    name: "bold",
+    name: "Bold",
     age: 21,
     country: "Korea",
     record: [10, 20, 300],
@@ -42,9 +42,17 @@ function getAllNames(list) {
   return names;
 }
 
+// {
+//     name: "gonchig",
+//     age: 15,
+//     country: "Mongolia",
+//     record: [10, 20, 30],
+//   },
+
 function getAvgSec(list) {
   let avgList = [];
   for (i = 0; i < list.length; i++) {
+    //list.length = 5 (hunii too)
     let sum = 0;
     for (j = 0; j < list[i].record.length; j++) {
       sum += list[i].record[j];
@@ -55,8 +63,8 @@ function getAvgSec(list) {
       avg: sum / list[i].record.length,
     };
     avgList.push(personNewObj);
-  } 
-return avgList;
+  }
+  return avgList;
 }
 
 function getAvgAge(list) {
@@ -70,7 +78,7 @@ function getAvgAge(list) {
 function getAllInfo(list) {
   let names = getAllNames(list);
   let avgAge = getAvgAge(list);
-  let avgSec = getAvgAge(list);
+  let avgSec = getAvgSec(list);
   let sum = 0;
   for (i = 0; i < avgSec.length; i++) {
     sum += avgSec[i].avg;
