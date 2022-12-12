@@ -86,4 +86,4 @@ setInterval(function () {
   document.getElementById("time").innerHTML = `${
     hour < 10 ? "0" : ""
   }${hour}: ${min < 10 ? "0" : ""}${min}: ${sec}`;
-});
+}, 100);
