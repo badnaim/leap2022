@@ -27,45 +27,53 @@
 
 // ------------------------------------
 
-// let rootElement = document.getElementById("dummy");
-// rootElement.style.display = "flex";
-// rootElement.style.flexWrap = "wrap";
-// rootElement.style.width = "850";
+let rootElement = document.getElementById("dummy");
+rootElement.style.display = "flex";
+rootElement.style.flexWrap = "wrap";
+rootElement.style.width = "850";
 
-// for (let i = 0; i < 8; i++) {
-//   for (let i = 0; i < 8; i++) {
-//     let newDiv = document.createElement("div");
-//     rootElement.appendChild(newDiv);
-//     newDiv.style.width = "100px";
-//     newDiv.style.heigth = "100px";
-//     newDiv.style.border = "1px solid black";
-//     if ((i + j) % 2 == 0) {
-//       newDiv.style.backgroundColor = "grey";
-//     }
-//   }
-// }
+for (let i = 0; i < 8; i++) {
+  for (let i = 0; i < 8; i++) {
+    let newDiv = document.createElement("div");
+    rootElement.appendChild(newDiv);
+    newDiv.style.width = "100px";
+    newDiv.style.heigth = "100px";
+    newDiv.style.border = "1px solid black";
+    if ((i + j) % 2 == 0) {
+      newDiv.style.backgroundColor = "grey";
+    }
+  }
+}
+
+let i = 0;
+
+setInterval(function () {
+  i++;
+  console.log(i);
+}, 1000);
+
+let name = "andy";
+let welcome = `${i}px`;
+
+// -----------------background ihesdeg-------ajilladag------------
 
 // let i = 0;
 
-// setInterval(function () {
-//   i++;
-//   console.log(i);
-// }, 1000);
-
-// let name = "andy";
-// let welcome = `${i}px`;
-
-// -----------------background ihesdeg-------------------
-// let i = 0;
-// setInterval(function () {
+// const myInterval = setInterval(function () {
 //   document.getElementById("time").innerText = "hello world";
-//   document.getElementById("time").style.backgroundColor = "blue";
+//   document.getElementById("time").style.height = "100px";
+//   document.getElementById("time").style.border = "solid 5px black";
+//   document.getElementById("time").style.backgroundColor = "yellow";
+
 //   document.getElementById("time").style.width = `${i}px`;
 //   i++;
+//   if (i == 255) {
+//     clearInterval(myInterval);
+//   }
 //   console.log(i);
-// }, 50);
+// }, 10);
 
-// -----------------time-------------------
+// -----------------time----------ajilladag---------
 
 // let sec = 00,
 //   min = 00,
@@ -89,7 +97,7 @@
 //   }${hour}: ${min < 10 ? "0" : ""}${min}: ${sec}`;
 // }, 100);
 
-// -----------------time-------------------
+// -----------------turshilt-------------------
 
 // let myButton = document.getElementById("myBtn");
 // function changeBackgroundColor () {
@@ -102,3 +110,22 @@
 //   myButton1.style = "background-color: green"
 // }
 // myButton1.addEventListener("click", changeBackgroundColor);
+
+// -------------------ongo oorchlogddog-----------------------
+
+// let i = 0;
+
+// const myInterval = setInterval(function () {
+//   document.getElementById("time").innerText = "hello world";
+//   document.getElementById("time").style.height = "100px";
+//   document.getElementById("time").style.border = "solid 5px black";
+
+//   document.getElementById("time").style.backgroundColor = `rgb(${i}, 20, 30)`;
+
+//   document.getElementById("time").style.width = `${i}px`;
+//   i++;
+//   if (i == 255) {
+//     clearInterval(myInterval);
+//   }
+//   console.log(i);
+// }, 10);
