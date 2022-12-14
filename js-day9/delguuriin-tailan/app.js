@@ -7,7 +7,7 @@ const data = [
     productName: "Cake",
     unitPrice: 5000,
     amount: 20,
-    totalPrice: 0,
+    totalPrice: 100000,
     casherId: 1,
     date: "2022-11-01",
   },
@@ -15,7 +15,7 @@ const data = [
     productName: "Chocolate",
     unitPrice: 3000,
     amount: 10,
-    totalPrice: 0,
+    totalPrice: 30000,
     casherId: 1,
     date: "2022-11-01",
   },
@@ -23,7 +23,7 @@ const data = [
     productName: "Tamhi",
     unitPrice: 4000,
     amount: 7,
-    totalPrice: 0,
+    totalPrice: 28000,
     casherId: 1,
     date: "2022-11-01",
   },
@@ -31,7 +31,7 @@ const data = [
     productName: "Colgate",
     unitPrice: 3500,
     amount: 3,
-    totalPrice: 0,
+    totalPrice: 10500,
     casherId: 1,
     date: "2022-11-01",
   },
@@ -39,15 +39,15 @@ const data = [
     productName: "Icecream",
     unitPrice: 8000,
     amount: 8,
-    totalPrice: 0,
+    totalPrice: 64000,
     casherId: 1,
     date: "2022-11-01",
   },
   {
     productName: "Candy",
-    unitPrice: 7600,
-    amount: 200,
-    totalPrice: 0,
+    unitPrice: 7000,
+    amount: 30,
+    totalPrice: 210000,
     casherId: 1,
     date: "2022-11-01",
   }
@@ -57,24 +57,51 @@ const data = [
 // 1. Нийт борлуулалтын дүнг тооцоолох.
 
   let sum = 0,
-      sum1 = 0;
+      totalPrice = 0;
 
-  for (let i = 1; i <= data.length; i++) {
+  for (let i = 0; i < data.length; i++) {
     sum = data[i].unitPrice * data[i].amount;
-    sum1 += sum;
+    totalPrice += sum;
   }
-console.log(sum1);
+console.log("Нийт борлуулалтын дүн: " + totalPrice + " төгрөг");
 
 // 2. Нийт борлуулагдсан барааны тоог тооцоолох.
 
-// function sumOfAmount(data) {
-//   let sum2 = 0;
-//   for (i = 0; i < data.length; i++) {
-//     sum2 += data[i].amount;
-//   }return sum2;
-// }
-// console.log(sum2);
+let totalAmount = 0;
+
+for (i = 0; i < data.length; i++) {
+  totalAmount += data[i].amount;
+}
+console.log("Нийт борлуулсан барааны тоо: " + totalAmount + " ширхэг");
+
 // 3. Хамгийн их зарагдсан 5 барааны жагсаалт /боруулалтын үнийн дүнгээр/ харуулах.
+
+let sum1 = 0;
+let max1 = data[0].totalPrice;
+let max2 = data[0].totalPrice;
+let max3 = data[0].totalPrice;
+const sorted = data.sort((a, b) => a - b);
+
+for (i = 0; i < data.length; i++) {
+  if (data[i].totalPrice > max1) {
+    max1 = data[i].totalPrice;
+  }if (data[i].totalPrice > max2 && max2 !== max1) {
+    max2 = data[i].totalPrice
+  }if (data[i].totalPrice > max3 && max3 !== max2  && max3 !== max1) {
+    max3 = data[i].totalPrice
+  }
+}console.log(max1, max2, max3);
+
+// function maximum () {
+//   let array = [5, 4, 2, 15, 10, 1];
+//   let max = array[0];
+//   for (i = 0; i < array.length; i++) {
+//     if (array[i] > max) {
+//       max = array[i];
+//     }
+//   }
+// }
+
 // 4. Хамгийн их зарагдсан 5 барааны жагсаалт /боруулалтын тоо хэмжээгэр/ харуулах.
 // 5. Хамгийн бага зарагдсан 5 барааны жагсаалт /боруулалтын үнийн дүнгээр/ харуулах.
 // 6. Хамгийн бага зарагдсан 5 барааны жагсаалт /боруулалтын тоо хэмжээгээр/ харуулах.
