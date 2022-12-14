@@ -80,6 +80,9 @@ console.log(
     (athlets[0].age + athlets[1].age + athlets[2].age) / (athlets.length + 1)
   )
 );
+
+
+
 let sum = 0,
   sum1 = 0,
   sum2 = 0,
@@ -94,12 +97,15 @@ let sum = 0,
 // }
 
 for (i = 0; i < athlets.length; i++) {
-  sum += athlets[i].age;
   for (j = 0; j < athlets[i].record.length; j++) {
     sum1 += athlets[i].record[j];
   }
   sum2 = sum1 / athlets[i].record.length;
   avg += sum2;
 }
-console.log("Average age: " + Math.floor(sum / (athlets.length + 1)));
-console.log("Average record: " + Math.floor(s / (athlets.length + 1)));
+for (i = 0; i < athlets.length; i++) {
+  sum += athlets[i].age;
+} 
+
+console.log("Average age: " + Math.floor(sum / (athlets.length)));
+console.log("Average record: " + Math.round(avg / (athlets.length)));

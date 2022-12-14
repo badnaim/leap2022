@@ -4,32 +4,32 @@
 
 const data = [
   {
-    productName: "Bakery",
+    productName: "Cake",
     unitPrice: 5000,
-    amount: 200,
-    totalPrice: 0,
-    casherId: 1,
-    date: "2022-11-01",
-  },
-  {
-    productName: "Chocolate",
-    unitPrice: 3040,
-    amount: 18,
-    totalPrice: 0,
-    casherId: 1,
-    date: "2022-11-01",
-  },
-  {
-    productName: "Tamhi",
-    unitPrice: 3407,
     amount: 20,
     totalPrice: 0,
     casherId: 1,
     date: "2022-11-01",
   },
   {
+    productName: "Chocolate",
+    unitPrice: 3000,
+    amount: 10,
+    totalPrice: 0,
+    casherId: 1,
+    date: "2022-11-01",
+  },
+  {
+    productName: "Tamhi",
+    unitPrice: 4000,
+    amount: 7,
+    totalPrice: 0,
+    casherId: 1,
+    date: "2022-11-01",
+  },
+  {
     productName: "Colgate",
-    unitPrice: 3340,
+    unitPrice: 3500,
     amount: 3,
     totalPrice: 0,
     casherId: 1,
@@ -37,7 +37,7 @@ const data = [
   },
   {
     productName: "Icecream",
-    unitPrice: 36800,
+    unitPrice: 8000,
     amount: 8,
     totalPrice: 0,
     casherId: 1,
@@ -50,27 +50,21 @@ const data = [
     totalPrice: 0,
     casherId: 1,
     date: "2022-11-01",
-  },
+  }
 ];
 
 // Дараах даалгаварыг хийж гүйцэтгэнэ үү.
 // 1. Нийт борлуулалтын дүнг тооцоолох.
 
-allInfo(data);
+  let sum = 0,
+      sum1 = 0;
 
-function totalPrice(list) {
-  let sum1 = 0,
-    sum = 0;
-  for (let i = 0; i < data.length; i++) {
-    sum1 = data[i].unitPrice * data[i].amount;
-    sum += sum1;
-    return sum;
+  for (let i = 1; i <= data.length; i++) {
+    sum = data[i].unitPrice * data[i].amount;
+    sum1 += sum;
   }
-}
+console.log(sum1);
 
-function allInfo(list) {
-  let = allInfo(list);
-}
 // 2. Нийт борлуулагдсан барааны тоог тооцоолох.
 
 // function sumOfAmount(data) {
