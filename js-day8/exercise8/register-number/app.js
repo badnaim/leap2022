@@ -23,12 +23,15 @@ let mglAlphabet = [
   "Х",
   "У",
   "Ц",
+  "Э",
 ];
+
+const alphabetics = "ФЦУЖЭНГШҮЗКЪЕЙЫБӨАХРОЛДПЯЧЁСМИТЬВЮ";
 
 function isCorrectReg(register) {
   if (
     mglAlphabet.includes(register.charAt(0)) == true &&
-    mglAlphabet.includes(register.charAt(1)) == true
+    alphabetics.includes(register.charAt(1)) == true
   ) {
     for (i = 2; i < 10; i++) {
       if (isNaN(register.charAt(i)) == false && register.length == 10) {
@@ -60,14 +63,14 @@ function isCorrectReg(register) {
 // }
 // isCorrectReg("МЗ02221711");
 
-console.log("-------------------------------------");
+// console.log("-------------------------------------");
 
 // Хэрэв зөв бол тухайн РД аас хүйс авдаг getGender(register) функц бич / Хэрэв буруу РД байвал буруу байна гэж хэвлэнэ. /
 
 function getGender(register) {
   if (
     mglAlphabet.includes(register.charAt(0)) == true &&
-    mglAlphabet.includes(register.charAt(1)) == true
+    alphabetics.includes(register.charAt(1)) == true
   ) {
     for (i = 2; i < 10; i++) {
       if (isNaN(register.charAt(i)) == false && register.length == 10) {
@@ -106,14 +109,14 @@ function getGender(register) {
 // }
 // getGender("МЗ02721901", "Эмэгтэй");
 
-console.log("-------------------------------------");
+// console.log("-------------------------------------");
 
 // РД аас төрсөн өдөр авдаг getBirthDay(register) функц бич / Хэрэв буруу РД байвал буруу байна гэж хэвлэнэ. /
 
 function getBirthDay(register) {
   if (
     mglAlphabet.includes(register.charAt(0)) == true &&
-    mglAlphabet.includes(register.charAt(1)) == true
+    alphabetics.includes(register.charAt(1)) == true
   ) {
     for (i = 2; i < 10; i++) {
       if (isNaN(register.charAt(i)) == false && register.length == 10) {
@@ -150,7 +153,8 @@ function getBirthDay(register) {
   }
 }
 
-console.log("-------------------------------------");
+// console.log("-------------------------------------");
+
 // РД аас төрсөн аймгийг олдог getBirthRegion(register)  функц бич / Хэрэв буруу РД байвал буруу байна гэж хэвлэнэ.
 
 let province = [
@@ -191,7 +195,7 @@ function getBirthRegion(register) {
   }
 }
 
-console.log("-------------------------------------");
+// console.log("-------------------------------------");
 
 // Дээрх бүх утгыг хэвлэдэг getRegisterInfo(register) функц бичнэ үү.
 
@@ -201,4 +205,4 @@ function getRegisterInfo(registerID) {
   getBirthDay(registerID);
   getBirthRegion(registerID);
 }
-getRegisterInfo("МЗ02221711");
+getRegisterInfo("ХЗ15391558");
