@@ -1,0 +1,23 @@
+body {
+  background-color: aqua;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+#percentage {
+  margin-top: 300px;
+  position: fixed;
+  width: 100px;
+  height: 40px;
+  background-color: aliceblue;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  /* cursor: pointer; */
+}
+
+/* #one:hover {
+  opacity: 0.7;
+} */
