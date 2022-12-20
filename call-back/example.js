@@ -74,3 +74,51 @@ const odds = filter(numbers, (n) => {
 // const odds = filter(numbers, (n) => {return n%3===0});
 // [3, 6, 9]
 console.log(evens);
+
+console.log("---------------");
+
+const names = ["james", "jess", "lily", "sevy"];
+// names.forEach((name) => console.log(name));
+const myForEach = (arr, cb) => {
+  for (let i = 0; i < arr.length; i++) {
+    const element = arr[i];
+    cb(element);
+  }
+};
+
+myForEach(names, (name) => {
+  console.log(name);
+});
+
+console.log("---------------");
+
+// function firstAction() {
+//   console.log("Im the first action");
+//   setTimeout(secondAction, 2000);
+// }
+
+// function secondAction() {
+//   console.log("Im the second action");
+// }
+
+// setTimeout(firstAction, 5000);
+
+console.log("---------------");
+
+function firstAction(callback, message) {
+  console.log(message);
+  setTimeout(callback, 2000);
+}
+
+function secondAction(message) {
+  console.log(message);
+}
+
+setTimeout(
+  () =>
+    firstAction(
+      () => secondAction("Im the second action"),
+      "Im the first action"
+    ),
+  5000
+);

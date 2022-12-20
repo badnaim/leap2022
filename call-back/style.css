@@ -1,6 +1,6 @@
 body {
   background-color: aqua;
-  height: 100vh;
+  height: 400vh;
   display: flex;
   justify-content: center;
 }
@@ -21,3 +21,12 @@ body {
 /* #one:hover {
   opacity: 0.7;
 } */
+
+#bttn {
+  margin-top: 50px;
+  width: 100px;
+  height: 40px;
+  background-color: black;
+  border-radius: 20px;
+  cursor: pointer;
+}
