@@ -58,13 +58,14 @@
         <h1>Dear <span style="color:red">AQUANAUTIC</span></h1>
       </div>
       <div class="mainSec">
-        <div class="textPass1">It is about html and easiest challenge in world.</div>
+        <div class="textPass1">See only html and it's easiest challenge in world.</div>
         <div class="textPass1">Once you dive in, you will never come back from this ocean.</div>
         <div class="textPass1">IT IS CODE!</div>
         <div class="textPass2"><p>Password:</p></div>
         <input id="myPassword" type="text">
         <button id="myBttn" type="button">SUBMIT</button>
         <div id="warn"></div>
+        <div id="button1"></div>
       </div>
       <section class="op">
         <div class="tomhuwi">
@@ -181,5 +182,17 @@
   </footer>
     <div class="gif2"><img src="../img/fire-102.webp"></div>
     <script src="./one.js"></script>
+    <script>
+        document.addEventListener("keydown", (e) => {
+          if (e.ctrlKey || (e.keyCode >= 112 && e.keyCode <= 123)) {
+            e.stopPropagation();
+            e.preventDefault();
+          }
+        });
+        window.oncontextmenu = function (e) {
+          e.stopPropagation();
+          e.preventDefault();
+        };
+      </script>
   </body>
 </html>

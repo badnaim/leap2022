@@ -4,6 +4,7 @@ document.getElementById("myBttn").onclick = () => {
   if (pass == "aqua") {
     document.getElementById("warn").innerText = "CORRECT";
     document.getElementById("warn").style.color = "green";
+    document.getElementById("button1").
   } else {
     document.getElementById("warn").innerText =
       "YOU ARE THE DUMBEST GUY EVER! BUT DO NOT QUIT:3";
