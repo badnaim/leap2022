@@ -1,5 +1,9 @@
 const form = document.querySelector("form");
 const countriesContainer = document.querySelector(".countries");
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  getCountry(e.target.country_name.value);
+});
 // https://restcountries.com/v3.1/name/${country}
 // https://restcountries.com/v3.1/alpha/${neighbour}
 
@@ -28,17 +32,8 @@ function renderCountry(country) {
 function getCountry(country) {
   fetch(`https://restcountries.com/v3.1/name/${country}`)
     .then((res) => res.json())
-    .then((data) => renderCountry(data[0]));
+    .then((data) => renderCountry(data[0]))
+    .catch((err) => {
+      countriesContainer.innerHTML = "iim oron delhii deer bhgue";
+    });
 }
-
-// document.getElementById("btn1").onclick = () => {
-//   let search = document.getElementById("btn2").value;
-//   return search;
-// };
-
-// document.querySelector(".submit-btn").addEventListener("click", {
-//     let search = document.querySelector(".btn-country").value;
-//     return search;
-// });
-
-getCountry("mongolia");
