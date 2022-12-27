@@ -16,3 +16,12 @@ function generateBreeds(data) {
     select.innerHTML += html;
   });
 }
+
+fetch("https://dog.ceo/api/breeds/list").then((res) => console.log(res));
+
+// function fetchImage(data) {
+//   data.map((dogBreed) => {
+//     const html = `<img src="${dogBreed}"/>`;
+//     card.innerHTML += html;
+//   });
+// }
