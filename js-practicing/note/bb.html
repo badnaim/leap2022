@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color:blueviolet;
+    }
+    .container {
+      width: 500px;
+      height: 300px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .reveal-btn {
+      width: 100%;
+      background-color: aqua;
+      border: 1px solid black;
+      cursor: pointer;
+    }
+    .hidden-content {
+      width: 100%;
+      background-color: aqua;
+      border: 1px solid black;
+      padding-left: 5px;
+      padding-top: 5px;
+      margin-left: 20px;
+      display: none;
+    }
+    .hidden-content.reveal-btn {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="main-heading">event listener</h1>
+  <div class="container">
+    <button class="reveal-btn boxes">reveal more</button>
+    <div class="hidden-content boxes">recusandae autem non rem quia laboriosam sunt pariatur repellat. Alias autem iure quia? Voluptates id tempora sed eveniet soluta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, molestiae veniam quis inventore fugiat nesciunt dolore magni, modi eligendi similique doloremque rerum suscipit assumenda veritatis quia repellat iste delectus consequuntur! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores laudantium sint magni assumenda laboriosam </div>
+  </div>
+  <script src="./note-dom1.js"></script>
+</body>
+</html>
