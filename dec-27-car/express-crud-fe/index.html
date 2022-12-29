@@ -46,14 +46,32 @@
               </ul>
             </li>
           </ul>
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            add car
+          </button>
+
+          <button
+            id="btn1"
+            type="button"
+            class="btn border border-dark btn-light"
+          >
+            get car
+          </button>
           <form class="d-flex" role="search">
             <input
               class="form-control me-2"
               type="search"
               placeholder="Search"
               aria-label="Search"
+              id="search"
             />
-            <button class="btn btn-outline-success" type="submit">
+            <button id="bttn" class="btn btn-outline-success" type="submit">
               Search
             </button>
           </form>
@@ -62,20 +80,6 @@
     </nav>
 
     <!-- <button type="button" class="btn btn-primary">Primary</button> -->
-
-    <!-- Button trigger modal -->
-    <button
-      type="button"
-      class="btn btn-secondary"
-      data-bs-toggle="modal"
-      data-bs-target="#exampleModal"
-    >
-      add car
-    </button>
-
-    <button id="btn1" type="button" class="btn border border-dark btn-light">
-      get car
-    </button>
 
     <!-- Modal -->
     <div
@@ -96,12 +100,13 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body">
-            <input />
-            <input />
-            <input />
-          </div>
+          <div class="modal-body"></div>
           <div class="modal-footer">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Open this select menu</option>
+              <option id="opOne" value="1">Toyota</option>
+              <option id="opTwo" value="2">Lexus</option>
+            </select>
             <button
               type="button"
               class="btn btn-secondary"
@@ -110,7 +115,7 @@
               Close
             </button>
             <button type="button" id="btn" class="btn btn-primary">
-              Save changes
+              Search
             </button>
           </div>
         </div>
